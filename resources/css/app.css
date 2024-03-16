@@ -1,0 +1,46 @@
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav-link:focus {
+    outline: none;
+    text-decoration: underline;
+}
+
+/* Custom checkbox style */
+input[type="checkbox"].custom-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #4CAF50;
+    border-radius: 0.25rem;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+input[type="checkbox"].custom-checkbox:checked {
+    background-color: #4CAF50;
+}
+
+input[type="checkbox"].custom-checkbox:checked::before {
+    content: '\2713';
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+/* Animation for fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
